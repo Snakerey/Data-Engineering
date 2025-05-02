@@ -1,64 +1,49 @@
-﻿# 📊 Análisis de Soporte al Cliente en Twitter
+# Proyecto: Análisis de Soporte al Cliente en Twitter
 
-Proyecto desarrollado como parte de mi portafolio en Ingeniería de Datos. Analiza más de 100,000 mensajes reales en Twitter entre usuarios y cuentas oficiales de soporte de marcas como Apple y Amazon.
+Este proyecto forma parte de mi portafolio en Ingeniería de Datos. Analiza 100,000 mensajes entre clientes y agentes de marcas como Apple, Amazon y Uber en Twitter.
 
-## 🎯 Objetivos
+El objetivo es identificar patrones clave de interacción, tiempo de respuesta y sentimiento con un enfoque práctico y visual.
 
-- Identificar patrones de comportamiento en atención al cliente.
-- Analizar tiempos de respuesta, sentimiento y sesiones de conversación.
-- Extraer insights para mejorar la experiencia del usuario y detectar áreas críticas.
+---
 
-## 🧰 Tecnologías utilizadas
-
-- Python
-- Pandas, NumPy
-- Matplotlib, Seaborn
-- NLTK (VADER)
-- WordCloud
-- Jupyter Notebook
-
-## 📁 Dataset
-
-[Customer Support on Twitter – Kaggle](https://www.kaggle.com/datasets/thoughtvector/customer-support-on-twitter)  
-Se utilizó una muestra de 100,000 registros (`twcs_sample_100k.csv`).
-
-## 📈 Análisis realizado
-
-- Limpieza y transformación de datos (tiempo, autores, fechas).
-- Cálculo de tiempo de respuesta y análisis de outliers.
-- Clasificación de sentimiento con VADER.
-- Visualización: distribución horaria, días, sentimientos, sesiones y nubes de palabras.
-- Agrupación por sesiones (ventana de 30 minutos).
-- Exportación de resultados clave a CSV.
-
-## 📊 Resultados destacados
-
-- **Media real de respuesta**: ~1.8 horas (sin outliers).
-- **Sentimiento general**: Mayoría neutral, con casos críticos bien segmentados.
-- **Clientes con más mensajes negativos** identificados.
-- **Top sesiones** de conversación analizadas y visualizadas.
-- **Exportación de resultados** para dashboards o modelos adicionales.
-
-## 🧠 Posibles extensiones
-
-- Modelado de churn o satisfacción basada en sentimiento y tiempos de respuesta.
-- Entrenamiento de bots de atención con base en clasificaciones reales.
-- Integración en dashboards interactivos en Power BI o Streamlit.
-
-## 📂 Estructura
+## 🧩 Estructura del Proyecto
 
 ```
-proyecto-soporte-cliente/
-├── Proyecto_1.ipynb
-├── Proyecto_1.html
-├── resumen_sesiones.csv
-├── resumen_sentimiento.csv
-├── README.md
+soporte-twitter/
+├── Proyecto_1 v1.1.ipynb         # Notebook principal con análisis completo
+├── Proyecto_1 v1.1.html          # Versión exportada en HTML para visualización web
+├── resumen_sesiones.csv          # Métricas por sesión de conversación
+├── resumen_sentimiento.csv       # Datos con análisis de sentimiento por tweet
+├── twcs_sample_100k.csv          # Dataset base (100,000 tweets de soporte)
+└── README.md                     # Descripción del proyecto
 ```
 
-## 👤 Autor
+---
 
-**Reinaldo Alejo**  
-📧 alejoreinaldo@gmail.com  
-🔗 www.linkedin.com/in/reinaldoalejocruz
+## 🚀 Técnicas aplicadas
 
+- Limpieza y transformación de datos con pandas
+- Cálculo de tiempo de respuesta entre clientes y agentes
+- Análisis de sentimiento con VADER (NLTK)
+- Visualización de actividad por hora, día y sesiones
+- Identificación de outliers y patrones de respuesta lenta
+
+---
+
+## 📌 Resultados clave
+
+- +68% de respuestas en menos de 1 hora
+- Mediana de respuesta: 16 minutos
+- Se identifican outliers de +700 días
+- Visualización de sesiones más largas y clientes críticos
+
+---
+
+## 📁 Dataset original
+
+- Fuente: [Customer Support on Twitter - Kaggle](https://www.kaggle.com/datasets/thoughtvector/customer-support-on-twitter)
+- Muestra utilizada: `twcs_sample_100k.csv`
+
+---
+
+Este proyecto puede integrarse en sistemas de priorización de tickets, automatización de soporte o análisis de churn de clientes.
