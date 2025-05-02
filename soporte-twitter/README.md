@@ -1,4 +1,4 @@
-# 📊 Análisis de Soporte al Cliente en Twitter
+﻿# 📊 Análisis de Soporte al Cliente en Twitter
 
 Proyecto desarrollado como parte de mi portafolio en Ingeniería de Datos. Analiza más de 100,000 mensajes reales en Twitter entre usuarios y cuentas oficiales de soporte de marcas como Apple y Amazon.
 
@@ -59,5 +59,6 @@ proyecto-soporte-cliente/
 ## 👤 Autor
 
 **Reinaldo Alejo**  
-📧 [Tu correo]  
-🔗 [Tu LinkedIn]
+📧 alejoreinaldo@gmail.com  
+🔗 www.linkedin.com/in/reinaldoalejocruz
+
